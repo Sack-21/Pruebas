@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style_pag1.css">
+    <link rel="stylesheet" href="../css/style_pag_reg.css">
     <title>EJERCICIO 1</title>
     <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/validar.js"></script>
 </head>
-
 
 <body>
 <!--Encabezado del sitio-->
@@ -35,80 +34,114 @@
 <!--contenido del sitio-->
 <div class="layout">
 <div class="contenido">
-    <form class="form_basico" name="formulario" onsubmit="return validar()">
+    <form action="" class="form_basico">
         <div class="titulo_form">
-            <h1>INPUTS BASICOS</h1>
+            <h1>Registrar Mascota Refugio</h1>
+        </div>
+        <div class="imagen">
+            <input type="file" name="" id="" placeholder="Sube una foto de la mascota">
         </div>
         <div class="entrada">
-            <label>Entrada Tipo Texto</label>
-            <input type="text" name="" class="campo" placeholder="Nombre Completo" required>
-            <span class="icono"><i class="fa-solid fa-square-check"></i></span>
+            <label>Nombre Mascota</label>
+            <input type="text" name=""placeholder="Ejemplo: Max">
             </div>
-        <div class="entrada"><label>Entrada Tipo Email</label>
-            <input type="email" name="" class="campo" placeholder="ejemplo@gmail.com" required>
-            <span class="icono"><i class="fa-solid fa-square-check"></i></span>
-            </div>
-        <div class="entrada"><label>Entrada Tipo Busqueda</label>
-            <input type="search" name=""placeholder="Buscar">
-            </div>
-        <div class="entrada"><label>Entrada Tipo Teléfono</label>
-            <input type="tel" name=""class="campo" placeholder="ejemplo: 3002136890"required>
-            <span class="icono"><i class="fa-solid fa-square-check"></i></span>
-            </div>
-        <div class="entrada"><label>Entrada Tipo Número</label>
-            <label><input type="number" class="campo" placeholder="ejemplo:1028337492" required>
-            </div>
-        <div class="entrada"><label>Entrada Tipo Fecha y Hora</label>
-            <label><input type="datetime-local" placeholder="Fecha y Hora">
-            </div>
-        <div class="entrada"><label>Entrada Tipo Color</label>
-            <label><input type="color">
-            </div>
-
         <div class="entrada">
-            <label>Entrada tipo List Desplegable</label>
-            <select name="" id="">
-                <option>opcion 1</option>
-                <option>opcion 2</option>
-                <option>opcion 3</option>
-                <option>opcion 3</option>
+            <label>Especie De Mascota</label>
+            <select>
+                <option disabled selected>Seleccione una opción</option>
+                <option>Gato</option>
+                <option>Perro</option>
             </select>
             </div>
         <div class="entrada">
-            <label>Seleccione su color Favorito</label>
+            <label>Tipo De Mascota</label>
+            <select>
+                <option disabled selected>Seleccione una opción</option>
+                <optgroup label="Perro">
+                     <option>Labrador Retriever</option>
+                     <option>Beagle</option>
+                </optgroup>
+                <optgroup label="Gato">
+                    <option>Persa</option>
+                    <option>Maine Coon</option>
+                </optgroup>
+            </select>
+            </div>
+        <div class="entrada"><label>Edad Mascota</label>
+            <input type="text" placeholder="ejemplo:3 meses">
+            </div>
+        <div class="entrada">
+            <label>Fecha Ingreso Refugio</label>
+            <input type="datetime-local" placeholder="Ejemplo: 21/08/2025">
+            </div>
+        <div class="entrada"><label>Color De Pelaje</label>
+            <input type="text" placeholder="ejemplo: Pelaje marron con manchas gris">
+            </div>
+
+        <div class="entrada">
+            <label>Seleccione El Sexo</label>
             <div class="opciones">
                 <div>
                     <label>
-                        <input type="radio" name="opc" value="Negro">
-                        <span>Negro</span>
+                        <input type="radio" name="opc" value="Macho">
+                        <span>Macho</span>
                     </label>
                 </div>
                 <div>
                     <label>
-                        <input type="radio" name="opc" value="Gris">
-                        <span>Gris</span>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="opc" value="Amarrillo">
-                        <span>Amarrillo</span>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="opc" value="Rojo">
-                        <span>Rojo</span>
+                        <input type="radio" name="opc" value="Hembra">
+                        <span>Hembra</span>
                     </label>
                 </div>
             </div>
+
+        <div class="entrada"><label>Peso</label>
+            <input type="text" placeholder="ejemplo: 12 kg">
             </div>
-        <div class="entrada checkbox">
-            <label><input type="checkbox" name="condiciones" value="aceptado">Acepta los Terminos y condiciones</label>
+        
+        <div class="entrada">
+            <label>Vacunas Al Dia</label>
+            <div class="opciones">
+                <div>
+                    <label>
+                        <input type="radio" name="opc" value="Si">
+                        <span>Si</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="opc" value="No">
+                        <span>No</span>
+                    </label>
+                </div>
+            </div>
+
+        <div class="entrada">
+            <label>Alergias</label>
+            <select>
+                <option disabled selected>Seleccione una opción</option>
+                <option>Pollo</option>
+                <option>Pescado</option>
+                <option>Ninguna</option>
+            </select>
+            </div>
+
+        <div class="entrada">
+            <label>Tiene Alguna Enfermedad</label>
+            <select>
+                <option disabled selected>Seleccione una opción</option>
+                <option>Diabetes</option>
+                <option>Problemas Respiratorios</option>
+                <option>Ninguna</option>
+            </select>
             </div>
         <div class="boton">
-            <input type="submit" value="Enviar">
+            <input type="reset" value="Vaciar Formulario">
         </div>
+        <div class="boton">
+            <input type="button" value="Registrar Mascota">
+        </div>
+
     </form>
    </div>  <!-- cierre de contenido -->
 </div> <!-- cierre de layout -->
