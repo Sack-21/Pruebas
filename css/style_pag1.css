@@ -121,7 +121,7 @@ color: #4b4949;
 estilo del formulario
 -------------------*/
 .form_basico{
-    width: 400px;
+    width: 700px;
     margin: auto;
     background: #ffffff;
     padding: 25px;
@@ -140,21 +140,17 @@ estilo del formulario
 }
 
 .entrada{
-    display: flex;
-    flex-direction: column;
     margin-bottom: 15px;
 }
-
 .entrada label{
-    margin-bottom: 5px;
-
+    display: inline-block;
+    width: 220px;
 }
 
 .entrada input,
 .entrada select{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 300px;
+    padding: 5px;
 }
 
 .boton{
@@ -175,6 +171,15 @@ estilo del formulario
 
 .boton input:hover{
     background: #006fd1;
+}
+.campo:valid + .icono {
+    color: green;
+}
+.campo:invalid + .icono {
+    color: red;
+}
+.icono {
+    font-size: 20px;
 }
 /*--------------
 estilo pie de pagina(fotter usando solo div como conetenedor)

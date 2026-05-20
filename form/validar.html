@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_pag1.css">
+    <title>EJERCICIO 1</title>
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/validar.js"></script>
+</head>
+
+
+<body>
+<!--Encabezado del sitio-->
+    <header>
+
+        <h1>EJERCICIO 1</h1>          
+    </header>
+<!--Menu de navegacion-->
+<div class="menu"> 
+    <a href="./index.html" id="logo"><img class="logo" src="../img/logo1.png" alt="logo"></a>
+    <ul>
+        <li><a href="#">WORKSHOP</a>
+        <ul class="submenu">
+            <li><a href="./form/basico.html">EJERCICIO 1</a></li>
+            <li><a href="#">EJERCICIO 2</a></li>
+        </ul></li>
+        <li><a href="#">REGISTRO</a></li>
+        <li><a href="#">INICIAR SESION</a></li>
+    </ul>
+</div>
+
+<!--contenido del sitio-->
+<div class="layout">
+<div class="contenido">
+    <form class="form_basico" name="Formulario" onsubmit="return validar()">
+        <div class="titulo_form">
+            <h1>INPUTS BASICOS</h1>
+        </div>
+        <div class="entrada">
+            <label>Entrada Tipo Texto</label>
+            <input type="text" name="" class="campo" placeholder="Nombre Completo" required>
+            <span class="icono"><i class="fa-solid fa-square-check"></i></span>
+            </div>
+        <div class="entrada"><label>Entrada Tipo Email</label>
+            <input type="email" name="" class="campo" placeholder="ejemplo@gmail.com" required>
+            <span class="icono"><i class="fa-solid fa-square-check"></i></span>
+            </div>
+        <div class="entrada"><label>Entrada Tipo Busqueda</label>
+            <input type="search" name=""placeholder="Buscar">
+            </div>
+        <div class="entrada"><label>Entrada Tipo Teléfono</label>
+            <input type="tel" name=""class="campo" placeholder="ejemplo: 3002136890"required>
+            <span class="icono"><i class="fa-solid fa-square-check"></i></span>
+            </div>
+        <div class="entrada"><label>Entrada Tipo Número</label>
+            <label><input type="number" class="campo" placeholder="ejemplo:1028337492" required>
+            </div>
+        <div class="entrada"><label>Entrada Tipo Fecha y Hora</label>
+            <label><input type="datetime-local" placeholder="Fecha y Hora">
+            </div>
+        <div class="entrada"><label>Entrada Tipo Color</label>
+            <label><input type="color">
+            </div>
+
+        <div class="entrada">
+            <label>Entrada tipo List Desplegable</label>
+            <select name="" id="">
+                <option>opcion 1</option>
+                <option>opcion 2</option>
+                <option>opcion 3</option>
+                <option>opcion 3</option>
+            </select>
+            </div>
+        <div class="entrada">
+            <label>Seleccione su color Favorito</label>
+            <div class="opciones">
+                <div>
+                    <label>
+                        <input type="radio" name="opc" value="Negro">
+                        <span>Negro</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="opc" value="Gris">
+                        <span>Gris</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="opc" value="Amarrillo">
+                        <span>Amarrillo</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="opc" value="Rojo">
+                        <span>Rojo</span>
+                    </label>
+                </div>
+            </div>
+            </div>
+        <div class="entrada"><label>Entrada Tipo Checkbox</label>
+            <label><input type="checkbox" name="condiciones" value="aceptado">
+            </div>
+        <div class="boton">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+   </div>  <!-- cierre de contenido -->
+</div> <!-- cierre de layout -->
+<!--pie de pagina-->
+<footer>
+    <div class="contenedor-footer">
+        <div class="info">
+            <h2 class="titulo_footer1">Acerca de ...</h2>
+            <p><a href="https://www.freelancer.com.co/hire/software-development"> <strong> freelancers en desarrollo de software</strong></a> Millones de personas usan Freelancer.com para hacer realidad sus ideas. </p>
+        </div>
+
+        <div class="info1">
+            <h2 class="titulo_footer2">Contactenos</h2>
+            <div class="redes_sociales">
+               <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="form/contactenos.html"><i class="fa-solid fa-file-lines"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="direccion">
+       <p><strong>Direccion</strong> calle 50 # 2-90 Soacha   <br><i class="fa-sharp fa-regular fa-copyright"></i>copyrigth 2026</p>
+    </div>
+</footer>
+</body>
+</html>
