@@ -28,13 +28,14 @@
         </ul></li>
         <li><a href="#">REGISTRO</a></li>
         <li><a href="#">INICIAR SESION</a></li>
+        <li><a href="registrar_mascota1.html">Formulario 1</a></li>
     </ul>
 </div>
 
 <!--contenido del sitio-->
 <div class="layout">
 <div class="contenido">
-    <form action="" class="form_basico">
+    <form class="form_basico" name="formulario" onsubmit="return validar()">
 
     <!-- Columna izquierda: subir imagen -->
     <div class="subir-imagen">
@@ -148,7 +149,7 @@
         <!-- Botones -->
         <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 10px;">
             <input type="reset" class="btn-publicar" value="Vaciar formulario">
-            <input type="button" class="btn-publicar" value="Registrar mascota">
+            <input type="submit" class="btn-publicar" value="Registrar mascota">
         </div>
 
     </div>
