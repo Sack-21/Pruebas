@@ -233,3 +233,20 @@ footer a:hover {
     color: #d7dde3;
     text-align: center;
 }
+
+/**-------
+ESTILO CONTENEDOR DEL BANNER
+----------*/
+
+.banner {
+    display: flex;
+    margin-top: 140px;
+    width: 100%;
+}
+.banner1 {
+    display: flex;
+    margin-top: 40px;
+    width: 100% !important;
+    height: 400px !important;
+}
+
